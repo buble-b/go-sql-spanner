@@ -1755,7 +1755,7 @@ func TestAllTypes(t *testing.T) {
 			}
 			return false
 		}, cmp.Ignore())) {
-			t.Fatalf("row mismatch\nGot:  %v\nWant: %v", allTypesRow, test.want)
+			t.Fatalf("%s: row mismatch\nGot:  %v\nWant: %v", test.name, allTypesRow, test.want)
 		}
 	}
 }
